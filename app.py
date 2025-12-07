@@ -37,7 +37,7 @@ docsearch = PineconeVectorStore.from_existing_index(
 retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k": 3})
 
 # --- Swapped OpenAI for Google Gemini ---
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash",
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash",
                                    temperature=0.7,
                                    )
 # ----------------------------------------
